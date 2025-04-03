@@ -1,0 +1,45 @@
+.imgContainer {
+  display: flex;
+  width: 22rem;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.profileImage {
+  margin-top: 0px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  width: 30rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .imgContainer {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/undeLineAnimatios.scss";
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: $text-white-color;
+  font-weight: 500;
+}
+
+.nav a.active {
+  color: #007bff;
+}

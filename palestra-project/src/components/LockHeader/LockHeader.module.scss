@@ -1,0 +1,59 @@
+@import "../../styles/variables.module.scss";
+
+.header {
+  width: 100%;
+  padding: 2rem;
+  transition: padding 0.8s ease-in-out;
+  z-index: 1000;
+  background-color: $primary-black-color;
+}
+
+.header.small {
+  padding: 0.5rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menuContainter {
+  display: flex;
+  max-width: 100%;
+  padding: 0 15px;
+  font-family: "Montserrat", sans-serif, Arial, Helvetica !important;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+  .container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuContainter {
+    padding: 0;
+  }
+  .header.small {
+    padding: 0rem;
+  }
+}

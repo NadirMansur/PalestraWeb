@@ -1,0 +1,84 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/classNames.module.scss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: $text-white-color;
+  p {
+    font-size: 1.5rem;
+    color: $primary-gray-color;
+  }
+  h1 {
+    color: $primary-gray-color;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: $white-color;
+  box-shadow: $box-shadow;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: $white-color;
+}
+
+.linea {
+  @extend .lineColumn;
+  background-color: $primary-gray-color;
+}
+
+.sectionTitle {
+  width: 50rem;
+}
+
+.img {
+  width: 90%;
+}
+
+.galeria {
+  width: 30rem;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .sectionTitle {
+    width: auto;
+  }
+  .img {
+    width: 25rem;
+  }
+  .galeria {
+    width: 20rem;
+  }
+}

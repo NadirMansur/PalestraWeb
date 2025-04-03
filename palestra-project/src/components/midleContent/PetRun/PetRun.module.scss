@@ -1,0 +1,33 @@
+@import "../../../styles/variables.module.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  background-color: $white-color;
+  width: fit-content;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}

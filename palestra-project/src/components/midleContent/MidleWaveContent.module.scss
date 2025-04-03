@@ -1,0 +1,19 @@
+@import "../../styles/variables.module.scss";
+
+.ocean {
+  height: 1%;
+  width: 100%;
+}
+
+.footer {
+  background: $text-white-color;
+}
+
+.wave {
+  background: url(../../assets/wave.svg);
+  height: 2rem;
+}
+
+.footerWawe {
+  background: url(../../assets/footerWave.svg);
+}

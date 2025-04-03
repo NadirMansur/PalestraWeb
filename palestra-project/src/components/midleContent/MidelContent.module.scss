@@ -1,0 +1,8 @@
+@import "../../styles/variables.module.scss";
+
+.container {
+  background-color: $text-white-color;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}

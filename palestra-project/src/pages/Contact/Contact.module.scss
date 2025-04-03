@@ -1,0 +1,65 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/classNames.module.scss";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: $text-white-color;
+  span {
+    color: $primary-gray-color;
+    font-size: 1.5rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: $white-color;
+  box-shadow: $box-shadow;
+  width: fit-content;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.sectionTitle {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-left: 3rem;
+}
+
+.linea {
+  @extend .line;
+  background-color: $primary-gray-color;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 1rem;
+  }
+  .container {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  .sectionContent {
+    margin-left: 0;
+    text-align: center;
+  }
+}

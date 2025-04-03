@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 100%;
+  img {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 1 2 200px;
+  }
+}

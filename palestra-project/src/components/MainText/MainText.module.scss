@@ -1,0 +1,58 @@
+@import "../../styles/variables.module.scss";
+
+.text1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.text2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text2Container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 18rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-left: 3rem;
+}
+
+.content {
+  margin-left: 3rem;
+}
+
+.textContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  color: $text-white-color;
+  background-color: $oscurecer;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .text1 {
+    font-size: 2rem;
+  }
+
+  .text2 {
+    font-size: 0.8rem;
+  }
+
+  .text2Container {
+    width: 20rem;
+    height: 5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+  .content {
+    margin-left: 0rem;
+  }
+}

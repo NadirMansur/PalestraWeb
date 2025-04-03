@@ -1,0 +1,45 @@
+.hoverUnderlineAnimation {
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .hoverUnderlineAnimation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hoverUnderlineAnimation:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .hoverUnderlineAnimation.left::after {
+    transform-origin: bottom right;
+  }
+  
+  .hoverUnderlineAnimation.left:hover::after {
+    transform-origin: bottom left;
+  }
+  
+  .hoverUnderlineAnimation.center::after {
+    transform-origin: bottom center;
+  }
+  
+  .hoverUnderlineAnimation.center:hover::after {
+    transform-origin: bottom center;
+  }
+  
+  .hoverUnderlineAnimation.right::after {
+    transform-origin: bottom left;
+  }
+  
+  .hoverUnderlineAnimation.right:hover::after {
+    transform-origin: bottom right;
+  }
